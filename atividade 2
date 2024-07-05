@@ -11,8 +11,12 @@ Idade Categoria
 #include <stdio.h>
 int main(void){
     int idade;
+    char nome [50];
+    printf ("Informe seu nome:");
+    scanf ("%c", &nome);
     printf ("Informe sua idade");
     scanf ("%i", &idade);
+    printf ("Seu nome é: %s \n" , nome);
     if(idade<5 || idade>26){
         printf ("Nada");
     }
